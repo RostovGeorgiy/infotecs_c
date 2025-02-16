@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.00)
+project(test CXX)
+set(CMAKE_CXX_CSTANDARD 11)
+set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -pthread -lm")
+add_subdirectory(include)
+add_subdirectory(program1)
+add_subdirectory(program2)
